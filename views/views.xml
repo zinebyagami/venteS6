@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="vente_s6.list">
+      <field name="name">venteS6 list</field>
+      <field name="model">vente_s6.vente_s6</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="vente_s6.action_window">
+      <field name="name">venteS6 window</field>
+      <field name="res_model">vente_s6.vente_s6</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="vente_s6.action_server">
+      <field name="name">venteS6 server</field>
+      <field name="model_id" ref="model_vente_s6_vente_s6"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="venteS6" id="vente_s6.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="vente_s6.menu_1" parent="vente_s6.menu_root"/>
+    <menuitem name="Menu 2" id="vente_s6.menu_2" parent="vente_s6.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="vente_s6.menu_1_list" parent="vente_s6.menu_1"
+              action="vente_s6.action_window"/>
+    <menuitem name="Server to list" id="vente_s6" parent="vente_s6.menu_2"
+              action="vente_s6.action_server"/>
+    -->
+  </data>
+</odoo>
